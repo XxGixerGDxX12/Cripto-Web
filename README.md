@@ -19,12 +19,7 @@ git clone https://github.com/XxGixerGDxX12/Cripto-Web/
 cd Cripto-Web
 ```
 ```
-python3 -m http.server 8080
-```
-# Visita la Pagina En Localhsot URL:
-
-```
-127.0.0.1:8080
+python3 server.py
 ```
 # Creado Por:
 
