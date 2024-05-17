@@ -1,26 +1,21 @@
-/* styles.css */
-
 body {
-    font-family: Arial, sans-serif;
     background-color: #121212;
     color: #e0e0e0;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    flex-direction: column;
 }
 
 .container {
-    text-align: center;
-    background-color: #1e1e1e;
+    width: 90%;
+    max-width: 1200px;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    width: 80%;
-    max-width: 800px;
-    margin: 20px;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -30,33 +25,68 @@ h1 {
 #search {
     width: 100%;
     padding: 10px;
+    font-size: 16px;
     margin-bottom: 20px;
-    border: 1px solid #333;
-    border-radius: 4px;
     background-color: #333;
-    color: #fff;
+    border: 1px solid #444;
+    color: #e0e0e0;
+}
+
+#crypto-prices {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
 .crypto {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    margin: 10px 0;
-    background-color: #2c2c2c;
-    border-radius: 4px;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.crypto:hover {
+    background-color: #444;
 }
 
 .crypto img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
 }
 
 .crypto .name {
+    font-size: 18px;
     font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    user-select: none;
 }
 
 .crypto .price {
-    color: #28a745;
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+
+.crypto .change {
+    font-size: 14px;
+    margin-top: 2px;
+}
+
+.green {
+    color: #4CAF50;
+}
+
+.red {
+    color: #FF5252;
+}
+
+canvas {
+    display: block;
+    margin: 20px auto;
 }
